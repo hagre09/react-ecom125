@@ -1,0 +1,93 @@
+$mainolor: #08c;
+
+@mixin countSpan {
+    padding: 0px 7px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    background-color: #d33;
+    position: absolute;
+    top: 22px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    background-color: $mainolor;
+    padding: 18px 0px;
+
+    img {
+        width: 127.5px;
+        height: 48.5px;
+        display: inline-block;
+        margin-top: 8px;
+    }
+
+    .inputSearsh {
+        margin: 2px;
+
+        input {
+            padding-left: 25px;
+            border-radius: 50px;
+            font-size: 19px
+        }
+
+        button {
+            background-color: #c6e5ff;
+            border-radius: 50px;
+            margin-left: -96px;
+            margin-top: 2px;
+            margin-bottom: 3px;
+            width: 20%;
+        }
+    }
+
+    .contactInfo {
+        .userIcon {
+            img {
+                color: #fff;
+                fill: #fff;
+                width: 32px;
+                height: 32px;
+            }
+
+            margin-right: 12px;
+        }
+
+        div {
+            p {
+                color: #fff;
+                font-size: 17px;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .icons {
+        font-size: 34px;
+        color: white;
+        font-weight: lighter;
+        margin-top: 12px;
+
+        .count {
+            @include countSpan;
+
+        }
+
+        .countHeart {
+            right: 146px;
+        }
+
+        .countBagShopping {
+            right: 84px;
+        }
+    }
+
+}
